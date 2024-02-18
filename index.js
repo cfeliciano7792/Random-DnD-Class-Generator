@@ -46,7 +46,7 @@ const dndClasses = [
 //   res.json({ class: randomClass });
 // });
 
-app.get('https://random-dnd-class.onrender.com', (req, res) => {
+app.get('/random-dnd-class', (req, res) => {
   const randomIndex = Math.floor(Math.random() * dndClasses.length);
   const randomClass = dndClasses[randomIndex];
   res.json(randomClass);
