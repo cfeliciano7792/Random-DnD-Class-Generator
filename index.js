@@ -39,18 +39,19 @@ const dndClasses = [
 //   'pefo'
 // ];
 
-// Route to get a random D&D class
-// app.get('/random-dnd-class', (req, res) => {
-//   const randomIndex = Math.floor(Math.random() * dndClasses.length);
-//   const randomClass = dndClasses[randomIndex];
-//   res.json({ class: randomClass });
-// });
-
+//Route to get a random D&D class
 app.get('/random-class', (req, res) => {
   const randomIndex = Math.floor(Math.random() * dndClasses.length);
   const randomClass = dndClasses[randomIndex];
-  res.json(randomClass);
+  res.json({ class: randomClass });
 });
+
+//returns string
+// app.get('/random-class', (req, res) => {
+//   const randomIndex = Math.floor(Math.random() * dndClasses.length);
+//   const randomClass = dndClasses[randomIndex];
+//   res.json(randomClass);
+// });
 
 // Start the server
 app.listen(PORT, () => {
