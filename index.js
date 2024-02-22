@@ -26,10 +26,11 @@ const dndClasses = [
 
 //Route to get a random D&D class
 app.get('/random-class', (req, res) => {
-  console.log("Fetch Request Recieved")
+  console.log("Fetch Request Received")
   const randomIndex = Math.floor(Math.random() * dndClasses.length);
   const randomClass = dndClasses[randomIndex];
   res.json({ class: randomClass });
+  console.log("Job Complete")
 });
 
 //returns string
