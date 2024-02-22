@@ -23,21 +23,6 @@ const dndClasses = [
   "Blood Hunter"
 ];
 
-// Random test code
-// const dndClasses = [
-//   'yose',
-//   'aced',
-//   'badl',
-//   'seki',
-//   'zion',
-//   'brca',
-//   'care',
-//   'grta',
-//   'havo',
-//   'jotr',
-//   'hosp',
-//   'pefo'
-// ];
 
 //Route to get a random D&D class
 app.get('/random-class', (req, res) => {
