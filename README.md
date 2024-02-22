@@ -18,3 +18,9 @@ Accessing the Microservice Online:
 2) Ensure your microservice is deployed and accessible online at the specified URL.
    ![image](https://github.com/cfeliciano7792/Random-DnD-Class-Generator/assets/96458958/ff5d088c-6a19-448c-ac9a-a06faebfe4e7)
 3) This code sends a GET request to the specified URL (https://dnd-generator.onrender.com/random-class). Upon receiving a response, it parses the JSON data using response.json(). The parsed data is then passed to the next .then() block where you can handle it as needed. In this case, the setRandomDndClass function is called to update the state with the received D&D class.
+
+.then(response => response.json()): This line is part of a chain of promises, commonly used for handling asynchronous operations in JavaScript. It takes the response returned by the microservice and converts it to a JSON object using the .json() method. This step assumes that the response from the microservice is in JSON format.
+
+.then(data => setRandomDndClass(data.class)): Once the response has been converted to a JSON object, this line extracts the relevant data from the object and sets it using a function called setRandomDndClass. It assumes that the JSON object contains a property called class, and it sets the value of data.class to setRandomDndClass.
+
+.catch(error => console.error('Error fetching random D&D class:', error)): This line catches any errors that occur during the process of fetching and handling the response from the microservice. If an error occurs, it logs a message to the console using console.error, indicating that there was an error fetching the random D&D class, and it also logs the specific error that occurred.
