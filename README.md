@@ -13,7 +13,8 @@ Localhost Endpoint:
 http://localhost:3000/random-class
 
 Example Call:
-j  const [randomDndClass, setRandomDndClass] = useState("");
+```javascript  
+const [randomDndClass, setRandomDndClass] = useState("");
 
   const getRandomDndClass = () => {
     // http://localhost:3000/random-class
@@ -23,6 +24,7 @@ j  const [randomDndClass, setRandomDndClass] = useState("");
       .then(data => setRandomDndClass(data.class))
       .catch(error => console.error('Error fetching random D&D class:', error));
 };
+```
 Instructions for RECEIVEing Data
 The microservice will respond to your request with JSON data containing a randomly selected D&D class. The response will have the following format:
 
