@@ -44,12 +44,11 @@ The microservice will respond to your request with JSON data containing a random
 
 #### Running the Microservice Locally
 If you wish to run the microservice locally on your machine, follow these steps:
-
-Clone the repository containing the microservice code.
-Navigate to the directory containing the code.
-Install dependencies by running npm install.
-Start the server by running node index.js.
-The microservice will be accessible at http://localhost:3000/random-class.
+1. Clone the repository containing the microservice code.
+2. Navigate to the directory containing the code.
+3. Install dependencies by running npm install.
+4. Start the server by running node index.js.
+5. The microservice will be accessible at http://localhost:3000/random-class.
 
 
 ![Screenshot 2024-02-22 142851](https://github.com/cfeliciano7792/Random-DnD-Class-Generator/assets/96458958/51a8c6d9-d54c-47f9-b52e-07803240a6ce)
