@@ -8,8 +8,9 @@ Accessing the Microservice Locally:
 
 1) Use the URL http://localhost:3000/random-class.
 2) Make sure your microservice is running locally on your machine at port 3000. To start the microservice simply type in the terminal: node index.js 
-   ![image](https://github.com/cfeliciano7792/Random-DnD-Class-Generator/assets/96458958/1d920b94-6d5a-4cda-82bc-8b0876161f9a)
-3) This code sends a GET request to the specified URL (http://localhost:3000/random-class). Upon receiving a response, it parses the JSON data using response.json(). The parsed data is then passed to the next .then() block where you can handle it as needed. In this case, the setRandomDndClass function is called to update the state with the received D&D class.
+
+    ![image](https://github.com/cfeliciano7792/Random-DnD-Class-Generator/assets/96458958/1d920b94-6d5a-4cda-82bc-8b0876161f9a)
+4) This code sends a GET request to the specified URL (http://localhost:3000/random-class). Upon receiving a response, it parses the JSON data using response.json(). The parsed data is then passed to the next .then() block where you can handle it as needed. In this case, the setRandomDndClass function is called to update the state with the received D&D class.
 
 
 Accessing the Microservice Online:
