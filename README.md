@@ -1,15 +1,21 @@
-D&D Class Randomizer Microservice
+# D&D Class Randomizer Microservice
 
-Communication Contract
+### What the Project Does
+The D&D Class Randomizer Microservice is a simple API that provides a random Dungeons & Dragons (D&D) class from a predefined list of classes. It is built using Node.js and Express, making it easy to integrate into other applications or services.
+
+### Why the Project Is Useful
+This microservice is useful for developers building D&D-related applications or games who need a quick way to generate random classes for characters or NPCs (non-player characters). It eliminates the need for developers to manually create a list of D&D classes and randomly select one, saving time and effort.
+
+### Communication Contract
 This README outlines the communication contract for interacting with the D&D Class Randomizer Microservice. Please follow the instructions below to programmatically request and receive data from the microservice.
 
-Instructions for REQUESTing Data
+### Instructions for REQUESTing Data
 To request data from the microservice, you can make an HTTP GET request to the /random-class endpoint. You can either access it online or run it locally on your machine.
 
-Online Endpoint:
+#### Online Endpoint:
 https://dnd-generator.onrender.com/random-class
 
-Localhost Endpoint:
+#### Localhost Endpoint:
 http://localhost:3000/random-class
 
 Example Call:
@@ -25,28 +31,25 @@ const [randomDndClass, setRandomDndClass] = useState("");
       .catch(error => console.error('Error fetching random D&D class:', error));
 };
 ```
-Instructions for RECEIVEing Data
-The microservice will respond to your request with JSON data containing a randomly selected D&D class. The response will have the following format:
+The code above sends a GET request to the specified URL (https://dnd-generator.onrender.com/random-class).
 
-json
-Copy code
+#### Instructions for RECEIVEing Data
+The microservice will respond to your request with JSON data containing a randomly selected D&D class. Upon receiving a response, it parses the JSON data using response.json(). The parsed data is then passed to the next .then() block where you can handle it as needed. In this case, the setRandomDndClass function is called to update the state with the received D&D class. The response will have the following format:
+
+```javascript
 {
   "class": "Random D&D Class"
 }
-You can access the random D&D class from the class field in the JSON response.
+```
 
-Running the Microservice Locally
+#### Running the Microservice Locally
 If you wish to run the microservice locally on your machine, follow these steps:
 
 Clone the repository containing the microservice code.
 Navigate to the directory containing the code.
 Install dependencies by running npm install.
-Start the server by running npm start.
+Start the server by running node index.js.
 The microservice will be accessible at http://localhost:3000/random-class.
-Endpoint Information
-Endpoint: /random-class
-Method: GET
-Description: Retrieves a random D&D class from the list of available classes.
-UML Diagram:
+
 
 ![Screenshot 2024-02-22 142851](https://github.com/cfeliciano7792/Random-DnD-Class-Generator/assets/96458958/51a8c6d9-d54c-47f9-b52e-07803240a6ce)
