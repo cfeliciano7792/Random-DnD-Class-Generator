@@ -27,4 +27,6 @@ Accessing the Microservice Online:
 .catch(error => console.error('Error fetching random D&D class:', error)): This line catches any errors that occur during the process of fetching and handling the response from the microservice. If an error occurs, it logs a message to the console using console.error, indicating that there was an error fetching the random D&D class, and it also logs the specific error that occurred.
 
 
+
+UML Diagram:
 ![Screenshot 2024-02-22 142851](https://github.com/cfeliciano7792/Random-DnD-Class-Generator/assets/96458958/51a8c6d9-d54c-47f9-b52e-07803240a6ce)
