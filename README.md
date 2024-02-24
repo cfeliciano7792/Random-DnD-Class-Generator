@@ -53,4 +53,5 @@ If you wish to run the microservice locally on your machine, follow these steps:
 
 #### UML Diagram
 
-![Screenshot 2024-02-22 142851](https://github.com/cfeliciano7792/Random-DnD-Class-Generator/assets/96458958/51a8c6d9-d54c-47f9-b52e-07803240a6ce)
+![UML Diagram](https://github.com/cfeliciano7792/Random-DnD-Class-Generator/assets/96458958/9b59cfe3-5733-4b48-b85d-8a4e531fb0f4)
+
